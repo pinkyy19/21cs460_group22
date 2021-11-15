@@ -1,0 +1,373 @@
+
+
+
+
+<html>
+
+<head>
+    <title>HUMAN ACTIVITY RECOGNITION USING SMARTPHONES</title>
+    <link href="file.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>HUMAN ACTIVITY RECOGNITION USING SMARTPHONES</h1>
+        </header>
+        <p><h3>
+
+               PAPER - CS660<br>
+GROUP - 22</h3>
+			
+		</p>
+<p><h3>
+A PROJECT ON MACHINE LEARNING BY PINKI PRADHAN
+        
+        <hr />
+        <h3> INTRODUCTION</h3>
+        <ul>
+            <p>A variety of real time sensing applications are becoming available , especially in the life logging , fitness domains. These applications use mobile sensors embedded in smartphones to recognise human activities in order to get a better understanding of human behaviour.
+   HAR system is required to recognize six basic human activities such as walking,jogging,moving upstairs,downstairs,running,sleeping by training a supervised learning model and displaying activities result as per input received from our accelerometer sensor and CNN model. <br>
+</p>
+			<img src="img1.png" alt="Basic structure of human activity recognition" style="width:400px;height:300px;" ALIGN="right" />
+			<p>HRA has wide application in medical resrarch and human survey system.Here  we will design a robust activity recognition system based on smartphone.The system uses 3 dimensional smartphone accelerometer as the only sensor to collect data from which features will be generated in both time and frequency domain.</p>
+			<p>Consider the below figure where different axes that is x,y and z axes of accelerometer sensors in different directions are shown and these axes change their directions according to the rotation of phone. So if anyone having a smartphone performs some activities then direction of these 3-axes will change accordingly.Then by observing these different values of accelerometer axes we can predict different type of activities performed by that person. </p>
+			<center><img src="https://www.mdpi.com/micromachines/micromachines-06-01100/article_deploy/html/images/micromachines-06-01100-g002-1024.png" alt="Diffeerent directions of sensors available in smartphones" style="width:500px;height:300px;" ></center>
+			
+			<h4>MOTIVATION</h4>
+			<p>A Human Recognition System has various approaches, such as vision-based and
+sensor-based, which further categorized into wearables, object-tagged, dense sensing,
+etc. Before moving further, there also exist some design issues in HAR systems, such
+as selection of different types of sensors, data collection related set of rules, recognition
+performance, how much energy is consumed, processing capacity, and flexibility .
+Keeping all these parameters in mind, it is important to design an efficient and lightweight
+human activity recognition model. A network for mobile human activity recognition has
+been proposed using long-short term memory approach for human activity recognition
+using triaxial accelerometers data.</p>
+<h4>BACKGROUND</h4>
+<p>The first HAR approach contains a large number of sensor type technologies that can be worn on-body known as wearable sensors, ambient sensors, and,
+together, both will make hybrid sensors that help in measuring quantities of human
+body motion. Various opportunities can be provided by these sensor technologies
+which can improve the robustness of the data through which human activities can be
+detected and also provide the services based on sensed information from real-time
+environments, such as cyber-physical-social systems there is also a type of magnetic senors when embedded in smartphone can track the positioning without any
+extra cost.
+2. Vision-based—RGB video and depth cameras being used to obtain human actions.
+3. Multimodal—Sensors data and visual data are being used to detect human activities
+</p>
+        </ul>
+        <hr />
+		<h3> Project proposal and plan </h3>
+        <ul>
+			<p>Idea for this project is 1st to collect data then some preprocessing is to be done on raw collected data.After balancing and standardizing it i will plot it on scatter plot by using matplot library.Then by using these graphs frame preparation is to be done.After that CNN model will be used to classify human activities.Then for accuracy measurement learning curve and confusion matrix will be plotted.</p>
+</p>
+				
+			<center><table style="width:90%">
+			<style>table, th, td {border: 1px solid black;}</style>
+			<tr>
+			<th>Week</th>
+			<th>Goal</th>
+			<th>Comments</th>
+			<th>Updates/Status</th>
+			</tr>
+			<tr>
+			<td>Week 4</td>
+			<td>Project Proposal</td>
+			<td>Project proposal presentation</td>
+			<td>Done</td>
+			</tr>
+			<tr>
+			<td>Week 5</td>
+			<td>Data Collection</td>
+			<td>Collection of sensor based WISDM dataset</td>
+			<td>Done</td>
+			</tr>
+			<tr>
+			<td>Week 6-8</td>
+			<td>frame preparation</td>
+			<td>Visualisation and frame preparation</td>
+			<td>Done</td>
+			</tr>
+			<tr>
+			<td>Week 8</td>
+			<td>model implementation</td>
+			<td>CNN , RNN-LSTM models implementation</td>
+			<td>Implementation done</td>
+			</tr>
+			<tr>
+			<tr>
+			<td>Week 9-11</td>
+			<td>Transition recognition</td>
+			<td>Different type of transition of activities recognition by LSTM</td>
+			<td>Done</td>
+			</tr>
+			<tr>
+			<td>Week 12-13</td>
+			<td>Submission</td>
+			<td>Final presentation and report submission</td>
+			<td>Done</td>
+			</tr>
+			</table></center>
+	</ul>
+	<hr />
+    <h3> DATASET</h3>
+        <ul>
+            <p><h3>DATA SOURCES</h3>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/XOEN9W05_4A?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p>I will be using datasets in my projest from this given below site.<br></p>
+<p> Source : <a href=" http://www.cis.fordham.edu/wisdm/dataset.php">WISDM dataset </a> </p><br>
+ <p>This dataset contains nearly 10,98,206 records collected from 33 users having 6 different types of activities. </p></ul>
+<hr />
+
+<h3>MIDWAY TARGET </h3>
+<ul>
+  
+<p>BY  Midway i will try to cover upto<br>
+  1. collection of datasets<br>
+  2. Balancing data sets<br>
+  3. Standardizing datasets<br>
+  4. Frame preparation<br>
+  5. Understanding how to implement CNN<br>
+  6. Implementation of 2D CNN(if time permits)<br>
+</p>
+<hr />
+<h3>AFTER  MIDWAY</h3>
+
+<p>
+1.Implementing CNN model(if not done by midway)<br>
+2.plotting learning curve<br>
+3.Confusion matrix<br>
+4.All possible improvements<br>
+5.Report writing<br>
+</p>
+</ul>
+
+<hr />
+<h3>MIDWAY PROJECT PRESENTATION</h3>
+<ul>
+<h4>RELATED PAPERS</h4>
+<p>
+Related papers that I am going to elaborate here are given below:<br>
+Parer 1: Wearable Sensor-Based Human Activity Recognition Using Hybrid Deep Learning Techniques<br>
+Paper 2:A lightweight deep learning model for human activity recognition on edge devices
+</p>
+<h5>INTRO OF PAPER 1</h5>
+<p>
+Human behavior recognition (HAR) is the detection, interpretation, and recognition of human behaviors, which can use smart heath care to actively assist users according to their needs. Human behavior recognition has wide application prospects, such as monitoring in smart homes, sports, game controls, health care, elderly patients care, bad habits detection, and identification. It plays a significant role in depth study and can make our daily life become smarter, safer, and more convenient. This work proposes a deep learning based scheme that can recognize both specific activities and the transitions between two different activities of short duration and low frequency for health care applications.
+</p>
+<h5>DATASETS USED IN THIS PAPER</h5>
+<p>This paper adopts the international standard Data Set, Smart phone Based Recognition of Human Activities and Postural Transitions Data Set to conduct an experiment, which is abbreviated as HAPT Data Set. The data set is an updated version of the UCI Human Activity Recognition Using popularity Data set . It provides raw data from smart phone sensors rather than preprocessed data and collect data from accelerometer and gyroscope sensor. In addition, the action category has been expanded to include transition actions. The HAPT data set contains twelve types of actions.Total  815,614 valid pieces of data are used here. 
+</p>
+<h5>PROPOSED METHOD</h5>
+<p>
+The overall architecture diagram of the method proposed in this paper is shown in Figure , which contains three parts. The first part is the preprocessing and transformation of the original data, which combines the original data such as acceleration and gyroscope into an image-like two-dimensional array. The second part is to input the composite image into a three-layer CNN network that can automatically extract the motion features from the activity image and abstract the features, then map them into the feature map. The third part is to input the feature vector into the LSTM model, establish a relationship between time and action sequence, and finally introduce the full connection layer to achieve the fusion of multiple features. In addition, Batch Normalization (BN) is introduced , in which BN can normalize the data in each layer and finally send it to the Softmax layer for action classification.</br>
+<img src="hn.png" weight="550" height="350">
+</p>
+
+<h3>ANALYSIS OF PAPER 1</h3>
+<h3>JUSTIFICATION OF THE METHOD USED</h3>
+<h5>Why data from sensors are used?</h5>
+<p>
+ Human behaviour data can be acquired from computer vision.But the vision based approaches have many limitations in practice.For example the use of a camera is limited by various factors, such as light, position,angle,potential obstacles and privacy invasion issues, which make it difficult to be restricted in practical applications.<br></p>
+<p> But if we use sensors are more reliable. But in case of sensors, these wearable sensors are small in size, high in sensitivity, strong in antiinterference ability and most importantly they are integrated with our mobile phones and these sensors can accurately estimate the current acceleration and angular velocities of motion sensors in real time.<br></p>
+<p> So the sensor based behaviour recognition is not limited by scene or time which can better reflect the nature of human activities.<br></p>
+<p>
+Therefore the research and application of human behaviour recognition based on sensors are more variable and significant.</p>
+
+<h5>Why CNN?</h5>
+<p>
+
+CNN follows a hierarchical model which works on building a network , like a funnel and finally gives out a fully connected layer where all the networks are connected to each other and output is processed.<br>
+The main advantages of CNN compared to other neural network is that it automatically detects the important features without any human supervision.<br>
+Little dependence on preprocessing and it is easy to understand and fast to implement.It has the highest accuracy among all algorithms that predict image.<br>
+</p>
+<h5>Why LSTM?</h5>
+<p>
+ LSTM is used here to establish recognition models to capture time relations in input sequences and could acheive more accurate recognition.<br>
+This work proposes a deep learning based scheme that can recognize both specific activities and the transitions between two different activities of short duration and low frequency for health care applications.<br>
+As LSTM is capable to recognise sequences of inputs, by using LSTM we can recognise transitions between two different activities of short duration means we can recognise transition from standing to sitting,sitting to walking like this.<br>
+ 
+
+</p>
+<h3>INTRO OF PAPER 2:</h3>
+<p>Here the architecture for proposed Lightweight model is developed using Shallow Recurrent Neural Network (RNN) combined with Long Short Term Memory (LSTM) deep learning algorithm.
+then  the model is trained and tested for six HAR activities on resource constrained edge device like RaspberryPi3, using optimized parameters.
+ Experiment is conducted to evaluate efficiency of the proposed model on WISDM dataset  containing
+sensor data of 29 participants performing six daily activities: Jogging, Walking, Standing, Sitting, Upstairs, and
+Downstairs.And lastly performance of the model is measured in terms of accuracy, precision, recall, f-measure, and confusion
+matrix and is compared with certain previously developed models.</p>
+<h5>DATASET DESCRIPTION</h5>
+<p>
+Here Android smartphone having in built accelerometer is used to capture tri-axial data . The dataset consist of six
+activities performed by 29 subjects. These activities include, walking, upstairs, downstairs, jogging, upstairs, standing,
+and sitting. Each subject performed different activities carrying cell phone in front leg pocket. Constant Sampling rate
+of 20 Hz was set for accelerometer sensor. The detailed description of dataset is given in the table 1 below.<br>
+<u>    Total no of samples: 1,098,207    </u><br>
+<u>    Total no of subjects: 29          </u><br>
+<u>    Activity &nbsp;    Samples  &nbsp:     Percentage  </u><br>
+       Walking  &nbsp;    4,24,400 &nbsp;      38.6%<br>
+       Jogging  &nbsp;   3,42,177  &nbsp;    31.2%<br>
+       Upstairs &nbsp;   1,22,869  &nbsp;     11.2%<br>
+       Downstairs &nbsp; 1,00,427  &nbsp;     9.1%<br>
+       Sitting    &nbsp; 59,939    &nbsp;    5.5%<br>
+       Standing  &nbsp;  48,397    &nbsp;     4.4%<br></p>
+<h5>PROPOSED METHOD</h5>
+<p>
+The working of Lightweight RNN-LSTM based HAR system for edge devices is shown in below figure. The accelerometer
+reading is partitioned into fix window size T. The input to the model is a set of readings (x1, x2, x3,…….,xT-1, xT)
+captured in time T, where xt is the reading captured at any time instance t. This segmented window is readings are
+then fed to Lightweight RNN-LSTM model. The model uses sum of rule and combine output from different states
+using softmax classifier to one final output of that particular window as oT.<br>
+<img src="hnn.png" width="550" height="350">
+</p>
+
+<h3>ANALYSIS OF PAPER 2:</h3>
+<h5>JUSTIFICATION OF METHOD USED</h5>
+<p>WHY RNN-LSTM?<br>
+=>In previous paper they are using CNN-LSTM but here RNN-LSTM is used.RNNs are capable of capturing temporal information from sequential data. It consists of input, hidden, and output layer.Hidden layer consist of multiple nodes.<br>
+=>RNN networks suffer from the problem of exploding and vanishing gradient. This hinders the ability of network to
+model wide-range temporal dependencies between input readings and human activities for long context windows.
+RNNs based on LSTM can eliminate this limitation, and can model long activity windows by replacing traditional
+RNN nodes with LSTM memory cells.So here RNN is used for Activity recognition and LSTM is  used to recognise different types of transition of activations. <br>
+
+<p>
+Works done in paper 1 and paper 2 is almost same.Only in paper 1 they are using CNN-LSTM model where in paper 2 RNN-LSTM is used.And the dataset used earlier is HAPT(Human Activities and Postural Transitions) Dataset 
+having 815,614 records and 12 columns  and have both accelerometer and gyroscope values.But in paper 2 they are using WISDM(Wireless Sensor Data Mining) datasets which have 1,098,207 records and 6 columns having only accelerometer values.
+</p></ul>
+<hr />
+<h3>BASELINE IMPLEMENTATION: </h3>
+<ul>
+<p>
+First I collected my dataset, after extracting that dataset what i saw that dataset was in so unstructured format.Then i tried to convert into structured format but as my dataset is very huge i couldnot make it structurd by using only python and pandas.Then I tried MS Access and after using some other statistical tools i finally converted that to a proper structured format.<br>
+Then I tried to import that dataset in my jupyter notebook but I faced a lot of trouble while importing that dataset. So I switched to Google Colab and I  stored that dataset on google drive because google colab has all the limitations that after 12
+hours all the data will be deleted and we need to restore that again and again. </p><br>
+
+Libraries that i have used in my project:<br>
+1.Pandas for loading dataset<br>
+2.Numpy for performing neumerical computation<br>
+3.Matplotlib for plotting<br>
+4.Pickle to serialize the object for permanent storage<br>
+5.Scipy for different scintific computation and statistical functions<br>
+6.Tensorflow for creating different neural networks<br>
+7.Seaborn for beautifying graphs<br>
+8.Sklearn for training and testing splitting of data and for the matrics that I will be using to judge my model.<b></p>
+<h3>DATA EXPLORATION</h3>
+<p>This is the summary of dataset that i have used.This dataset contains 6 activities having nearly 11 lakhs record.</p>
+<img src="summary.png" alt="summary of dataset" style="width:200px;height:200px;" ALIGN="right" />
+<img src="activity.png" alt="no of activities" style="width:200px;height:200px;" ALIGN="right" />
+<p>From this righthand side snapshot we can see that this dataset contains highly unbalanced data.Means here walking and jogging have more no of records i.e. 424397 and 342176 records respectively while standing has 48395 records only.If we use this dataset as then it is going to highly overfitted and skewed towards walking and jogging.
+So We need to balance the dataset, for that what I did I took only 3555 records from each activity.</p><br>
+<img src="userno.png" alt="no of records per user" style="width:200px;height:200px;" ALIGN="right" />
+<img src="activityno.png" alt="no of records per activity" style="width:200px;height:200px;" ALIGN="right" /><br>
+
+
+<p>Then I plotted a graph which shows how many records belong to each activity in the form of a bar graph.Here 1st graph is activities vs no of records.Then I plotted activities in perspective of users means how much records belong to each user.Second graph is a user number vs no of records belong to each user.</p>
+
+
+<h3>VISUALISING ACCELEROMETER DATA</h3>
+<p>
+After exploring dataset I tried to plot these accelerometer values for timestamp 10sec so that we can see how the accelerometer data looks visually for each activity.
+Because each activity follow a specific pattern and by looking at these patterns we can classify which accelerometer values belongs which class. From below figure we can see that, for walking and jogging there is a lots of variation in pattern but for sitting  pattern is almost flat.
+So what my model should learn if there is more variation in pattern then that will be classified into jogging and if there is less of variation that should be classified as sitting.</p><br>
+<img src="sitting.png" alt="Graph for sitting" style="width:280px;height:200px;" ALIGN="left" />
+<img src="walking.png" alt="Graph for walking" style="width:280px;height:200px;" ALIGN="center" />
+<img src="jogging.png" alt="Graph for jogging" style="width:280px;height:200px;" ALIGN="right" />
+<img src="standing.png" alt="Graph for standing" style="width:280px;height:200px;" ALIGN="left" />
+<img src="downstair.png" alt="Graph for downstairs" style="width:280px;height:200px;" ALIGN="center" />
+<img src="upstair.png" alt="Graph for upstairs" style="width:280px;height:200px;" ALIGN="right" />
+
+
+
+</p>
+<h4>FRAME PREPARATION</h4>
+<P> From frame preparation we need to import scipy stats.Here for 1sec timestamp Frame size is 20.So for 4sec we will take 80 data items.Initial overall data that will be feeding our neural network is 80*3 i.e. 240. Hopsize  is twice of framesize.Hopsize means suppose we have taken 80 data samples and then for next time we want to take the next 80 samples onwards or do we want some overlapping.Here I am taking 80 data samples initially and making advancement for 40 data samples.For 4sec of data we will consider the level which comes most number of times that can be done by calculating mode.Then level of these 4sec data will be given having highest no of mode.</P>
+<h3>IMPLEMENTATION OF CNN MODEL</h3>
+Here I have called sequential layer 1st . In 1st layer I have added 2-dimensional convolution layer that is Con2D . Then 16 filters are passed having [2,2] kernel size and activation function relu is used . For 1st layer input shape is   x-train . Then I added dropout layer means randomly 0.1 or 10% neurons have been dropped . The another layer of CNN having 32 layers and size of [2,2] with activation function relu is added . In hidden Convolution layer we don't need to provide input shapes because it automatically matches this preceeding layers. Then 20% dropout will be added . Then add flatten then dense layer having 64 and activation function relu and drop 50% neuron  randomly . Then add final layer . As we need 6 classes and it is a multi class classification we are taking softmax as activation function.For compilation Adam optimizer is used and loss function is sparse categorial cross entropy.Then training process will start.I kept this in history of model training. I took number of epoch is 10.</p>
+
+<img src="tt.png" alt=" training and testing results" style="width:350px;height:200px;" ALIGN="right" />
+<p>After implementing this model earlier I was getting 81.23% training accuracy and 81.77% testing accuracy . Then I tried adjusting frame size and Hopsize . Then by changing it repeatedly, for frame size 300sec and hopsize 40 I got highestet percentage of training accuracy and testing accuracy but model was overfitted and loss was very high . But for frame size 80sec and Hopsize 40 I got training accuracy of 92.34% and testing accuracy of 94.77% and loss was too low.  
+ </p><br>
+
+<p>Then here are the images of learning curve. 1st graph is plotted between no of epochs and accuracy of model.Then the 2nd graph is plotted between no of epochs and loss of model. Here  we got quite good accuracy . As validation loss is less than training loss we can say that our model is neither overfiting and nor underfitting .   </p>
+<img src="ma.png" alt="Model accuracy" style="width:420px;height:200px;" ALIGN="right" />
+
+<img src="mla.png" alt="Model loss accuracy" style="width:420px;height:200px;" ALIGN="center" /><br>
+
+</ul>
+<hr />
+<ul>
+<h3>RNN-LSTM IMPLEMENTATION</h3><br>
+I have implemented RNN-LSTM model using tensorflow . This model consists of 2 LSTM layer stack one after another having 64 units each and the activation function for LSTM and hidden layer is relu and for output layer is Softmax . We have to find out 1 out of 6 different outcome possible using the output layer . 1st I initialised weight and biases then I have transposed and reshaped the input for betterly able feed into the model . After this dataset was splitted  into multiple dataset containing 200 datapoints each.
+Then i created 2 LSTM layer back to back stack after another and easily we are returning output of the whole RNN we are computing and returning it here . Then I have set L2 regularisation and as well as loss function . L2 regularisation for preventing our model to overfitting and loss function is simply cross entropy loss . Learning rate is 0.0025 and optimiser I used is Adam optimiser .Then I train my model for 50 epochs . Then I created a session so that training process will start and display our result .  <br>
+<p><img src="rlc.jpg" alt="Model loss accuracy" style="width:420px;height:300px;" ALIGN="left" />
+<img src="cm.jpg" alt="Model loss accuracy" style="width:420px;height:300px;" ALIGN="right" /><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; After 50 epochs I got train and test accuracy of 100% with test loss 0.675827622413635 and training loss is 0.6414243578910828 . From the learning curve we can see that as number of epochs increases train loss and test loss decreses gradually .From epoch 1 train and testing acuracy is 1.<br></p>
+<p>Then here is snapshot of confusion matrix . Here our model is a little bit confused between upstairs and downstairs . 
+</ul>
+
+      <hr />
+		<h3>IMPROVEMENTS</h3>
+		
+		<p>As I have mentioned earlier I tried to implement transition of activites recogntion . Transtion recognition means, suppose a person is sitting and then he changes his activities means he stands suddenly and it takes 4sec to that person to change his activity . If we consider those 4sec value of accelerometer then we can not classify that neither as standing nor as sitting . So we need to take that transition recognition into consideration. For this transition recognition I need different dataset for that because the dataset that i am currently working doesn't contain any data regarding this transition recognition . I tried searching a lot but I couldnot find any dataset which contains these transition recognition .
+So I collected data from accelerometer of my phone . As recording values of sensor is quite difficult i couldnot collect much datas . I was able to collect only nearly 1000 data from myphone which contains 6 transition activities i.e Sitting to standing, Standing to sitting, Lying to sitting, Sitting to lying, Walking to sitting, Standing to lying. Then I implemented LSTM model .
+I got an accuracy of 100% but the loss is a bit high.<br></p>
+ <img src="tlc.png" alt="learning curve" style="width:420px;height:300px;" ALIGN="right" />
+<img src="tcm.png" alt="confusion matrix" style="width:420px;height:300px;" ALIGN="right" />
+ 
+<hr />
+<h3>RESULTS</h3>
+<ul>
+<p>
+USING CNN MODEL<br>
+For frame size = 300sec and Hopsize = 80 ,Training Accuracy = 94.66% , Testing Accuracy = 92.42% ,Training loss = 0.1436, Testing loss = 0.9246(Overfitted)<br>
+For frame size = 200sec and Hopsize = 60 ,Training Accuracy = 94.80% , Testing Accuracy = 92.30% ,Training loss = 0.1567, Testing loss = 0.9437(Overfitted)<br>
+For frame size = 80sec  and H0psize = 40 ,Training Accuracy = 91.41% , Testing Accuracy = 93.87% ,Training loss = 0.2107, Testing loss = 0.2020<br>
+USING RNN-LSTM<br>
+For datapoints = 800, Training accuracy = 100% ,Testing accuracy = 100% ,Train loss = 0.6414243578910828
+, test loss = 0.6758276224136353<br>
+FOR TRANSITION RECOGNITION<br>
+final results: accuracy: 1.0 loss: 3.165830373764038<br>
+GITHUBLINK:<br>
+<li>[1] <a href = "https://github.com/pinkyy19/github/blob/main/HARCNN.ipynb">IMPLEMENTATION OF CNN</a>
+<li>[2] <a href = "https://github.com/pinkyy19/github/blob/main/MLPROJECT.ipynb">IMPLEMENTATION OF RNN-LSTM</a>
+
+<li>[3] <a href = "https://github.com/pinkyy19/github/blob/main/transition.ipynb">TRANSITION RECOGNITION</a>
+		<hr />
+<h3>CONCLUSION</h3>
+<p> Actions identified in this project only include common
+basic actions and individual transition actions. In the next
+step, more kinds of actions can be collected and more
+complex actions can be added, such as eating and driving.
+And the individual recognition can be realized by considering the behavior differences of different users. Meanwhile,
+the deep learning model still needs to be optimized and
+improved. Studies show that the combination of depth
+model and shallow model can achieve better performance.
+Deep learning model has strong learning ability, while
+shallow learning model has higher learning efficiency. This
+collaboration between the two can achieve more accurate
+and lightweight recognition.</p>
+
+<iframe src="https://onedrive.live.com/embed?resid=78A26DB1FDA69169%21130&amp;authkey=%21ALzrToBs72mA0CM&amp;em=2&amp;wdAr=1.7777777777777777" width="610px" height="367px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<iframe src="https://onedrive.live.com/embed?resid=78A26DB1FDA69169%21152&amp;authkey=%21ANOyVm0lbRg3w_c&amp;em=2&amp;wdAr=1.7777777777777777" width="610px" height="367px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+
+      <hr /> 
+   <h3>REFERENCES</h3>
+<ul>
+<li>[1] <a href="https://doi.org/10.1155/2020/2132138">Wearable Sensor-Based Human Activity Recognition Using Hybrid Deep Learning Techniques</a>
+			<li>[2] <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">A Lightweight Deep Learning Model for Human Activity
+Recognition on Edge Devices</a>
+			<li>[3] <a href="http://arxiv.org/abs/1405.4506.">Efficient dense labelling of human activity sequences from wearables using fully convolutional networks
+Author links open overlay panel</a>
+			<li>[4] <a href="https://doi.org/10.1155/2017/3090343">A Review on Human Activity Recognition Using Vision-Based Method</a>
+		
+	
+
+
+ </div>
+
+
+</body>
+
+</html>
